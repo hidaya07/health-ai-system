@@ -1,0 +1,275 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff, #f4f1ff);
+  color: #222;
+}
+
+
+.app-bg {
+  min-height: 100vh;
+}
+
+
+.dashboard {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(185, 167, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(185, 167, 255, 0.12);
+  margin-bottom: 0;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+
+h1, h2, h3 {
+  color: #6c5ce7;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+p {
+  color: #777;
+  font-size: 14px;
+}
+
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+input:focus {
+  border-color: #b9a7ff;
+  box-shadow: 0 0 0 3px rgba(185, 167, 255, 0.2);
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #b9a7ff, #a18bff);
+  color: white;
+  border: none;
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(161, 139, 255, 0.35);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.auth-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f4f1ff);
+  position: relative;
+}
+
+/* GLOW EFFECT */
+.glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: #b9a7ff;
+  filter: blur(120px);
+  opacity: 0.25;
+  border-radius: 50%;
+}
+
+/* AUTH CARD */
+.auth-card {
+  width: 360px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(185,167,255,0.3);
+  box-shadow: 0 20px 60px rgba(120,100,255,0.15);
+  text-align: center;
+  z-index: 2;
+}
+
+/* LOGO */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #6f5cff;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 18px;
+}
+
+/* AUTH OPTIONS */
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #777;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.forgot {
+  color: #b9a7ff;
+  cursor: pointer;
+}
+
+/* SWITCH TEXT */
+.switch-text {
+  font-size: 13px;
+  margin-top: 15px;
+  color: #777;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: #b9a7ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* TERMS */
+.terms {
+  position: absolute;
+  bottom: 20px;
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+}
+
+.terms span {
+  color: #b9a7ff;
+}
+
+/* =========================
+   DIAGNOSTIC FORM
+========================= */
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* AGE BOX */
+.age-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f6f3ff;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.age-box button {
+  background: #b9a7ff;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* OPTIONS */
+.options {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.options button {
+  flex: 1;
+  background: #f1eeff;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.options button.active {
+  background: #b9a7ff;
+  color: white;
+}
+
+/* SYMPTOMS */
+.symptoms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.symptom {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #f3f0ff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.symptom.active {
+  background: #b9a7ff;
+  color: white;
+}
+
+/* WARNING */
+.warning {
+  font-size: 11px;
+  color: #d97706;
+  margin-top: 10px;
+}

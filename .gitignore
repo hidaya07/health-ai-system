@@ -5,6 +5,16 @@ node_modules/
 package-lock.json
 yarn.lock
 
+# DATABASE FILES
+*.db
+
+# ML DATASET
+ml-model/dataset.csv
+
+# MODELS (optional but recommended)
+*.pkl
+*.joblib
+
 # =======================
 # ENV FILES (VERY IMPORTANT)
 # =======================
